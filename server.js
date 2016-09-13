@@ -41,6 +41,9 @@ app.get('/:id', function(req, res){
   })
 })
 
+app.get('/', function(req, res){
+  res.send('Hello you');
+})
 
 app.listen(port, function(){
   console.log('Server is on...', port);
